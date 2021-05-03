@@ -12,8 +12,3 @@
     components: { Form },
   }
 </script>
-
-
-<style>
-
-</style>

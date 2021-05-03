@@ -1,5 +1,6 @@
 <template>
-  <v-footer padless app>
+  <v-footer padless app
+  >
     <v-col
       class="text-center"
       cols="12"
@@ -11,8 +12,4 @@
    
 </template>
 
-<script>
-  export default {
-    
-  }
-</script>
+<script></script>
