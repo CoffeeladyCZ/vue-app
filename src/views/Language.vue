@@ -1,43 +1,26 @@
 <template>
-  
   <v-container
     class="px-0"
     fluid
-  >
-    <v-btn
-          color="orange"
-          text
-        >
-          {{ $t(message.hello) }}
-        </v-btn>
+  > 
+    <h2 class="language-title">{{ $t("change")}}</h2>
+    <SelectLocale />
   </v-container>
 </template>
 
 <script>
-// import VueI18 from "vue-i18n";
+import SelectLocale from "@/components/SelectLocale.vue";
 
-// Vue.use(VueI18)
-
-const messages = {
-    en: {
-      message: {
-        hello: "Welcome to the webside."
-      }
-    },
-    cz: {
-      message: {
-        hello: "Vítejte na webu"
-      }
-    }
-  }
-
-
-  export default {
-    name: "Language",
-    locale: "cz",
-    messages,
-    data () {
-      
-    },
-  }
+export default {
+  name: "Language",
+  components: { SelectLocale }
+}
 </script>
+
+<style>
+.language-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #616161;
+}
+</style>

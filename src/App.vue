@@ -10,16 +10,13 @@
      
     </v-main>
     <Footer /> 
-    
   </v-app>
-
 </template>
 
 <script>
 import TopBar from "@/components/TopBar.vue";
 import SideBar from "@/components/SideBar.vue";
 import Footer from "@/components/Footer.vue";
-
 
 export default {
   name: "App",

@@ -4,29 +4,28 @@
     absolute
     color="deep-orange lighten-1"
   >
-    
     <v-toolbar-title
       class="white--text"
     >
-    <h1 class="h1-title pl-4">Webside</h1></v-toolbar-title>
+    <h1 class="h1-title pl-4">{{ $t("title-eshop") }}</h1></v-toolbar-title>
     <v-spacer></v-spacer>
+
     <v-btn
       color="text-white"
       medium
       rounded
       class="mr-3"
-    ><router-link to="/">Home</router-link></v-btn>
+    ><router-link to="/">{{ $t("home") }}</router-link></v-btn>
     
     <v-btn
       color="white"
       medium
       rounded
-    ><router-link class="text-black" to="/language">Language</router-link></v-btn>
+    ><router-link class="text-black" to="/language">{{ $t("language") }}</router-link></v-btn>
     
     <v-menu
       bottom
       left
-      
     >
       <template v-slot:activator="{ on, attrs }">
         <v-btn

@@ -9,7 +9,4 @@
     {{ new Date().getFullYear() }} — <strong>Marcela Karafizievová</strong>
     </v-col>
   </v-footer>
-   
 </template>
-
-<script></script>

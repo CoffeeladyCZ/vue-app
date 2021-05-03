@@ -13,10 +13,7 @@ const routes = [
   {
     path: '/language',
     name: 'Change language',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "language" */ '@/views/Language.vue')
+    component: () => import('@/views/Language.vue')
   }
 ]
 

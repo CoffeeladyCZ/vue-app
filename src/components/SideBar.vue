@@ -6,7 +6,8 @@
     id="main_sidebar"
   >
     <v-divider></v-divider>
-    <!-- <h3 class="main-title">{{ "message.hello"}}</h3> -->
+
+    <Title />
 
     <v-card
       class="mx-auto my-5"
@@ -14,8 +15,7 @@
       v-for="nameItem of nameItems"
       :key="nameItem"
     >
-      <v-card-title
-      >{{ nameItem }}</v-card-title>
+      <v-card-title>{{ nameItem }}</v-card-title>
       <v-card-text class="text--primary">
         <p>Praha - Letná</p>
       </v-card-text>
@@ -24,21 +24,22 @@
           color="orange"
           text
         >
-          Sdílet
+          {{ $t("share") }}
         </v-btn>
       </v-card-actions>
     </v-card>
-
   </v-navigation-drawer>
 </template>
 
 <script>
+import Title from "@/components/Title.vue";
+
 export default {
   name: "SideBar",
+  components: { Title },
   data: () => ({
     nameItems: ["format.cafe", "Kafe Karlín", "Urban Café"],
   }),
-  
 }
 </script>
 
@@ -60,4 +61,3 @@ export default {
   }
 }
 </style>
-

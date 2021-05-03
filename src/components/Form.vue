@@ -1,13 +1,12 @@
 <template>
-  <v-card
-  >
+  <v-card>
     <v-form
     class="pa-6 auto"
     ref="form"
     v-model="valid"
     lazy-validation
     relative
-  >
+    >
       <v-text-field
         v-model="name"
         :counter="10"
@@ -56,9 +55,9 @@
   </v-card>
 </template>
 
-
 <script>
 import axios from "axios";
+
 export default {
   data: () => ({
     valid: true,
